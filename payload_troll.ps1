@@ -24,6 +24,8 @@ if (-not (Test-Path $nirPath)) {
 ############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
 Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
 
+Start-Sleep -Milliseconds 1500
+
 & $nirPath mutesysvolume 0
 & $nirPath setsysvolume 20000
 
