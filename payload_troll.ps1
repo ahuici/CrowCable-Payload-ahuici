@@ -22,7 +22,7 @@ if (-not (Test-Path $nirPath)) {
 
 
 ############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
-Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
+Start-Process "https://www.youtube.com/watch?v=0rwNH-lO7N4&list=RD0rwNH-lO7N4&start_radio=1"
 
 Start-Sleep -Milliseconds 1500
 
@@ -36,7 +36,7 @@ Start-Sleep -Seconds 4
 
 
 ############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
-Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
+Start-Process "https://www.youtube.com/watch?v=0rwNH-lO7N4&list=RD0rwNH-lO7N4&start_radio=1"
 
 & $nirPath mutesysvolume 0
 & $nirPath setsysvolume 65535
@@ -48,7 +48,7 @@ Start-Sleep -Seconds 4
 
 
 ############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
-Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
+Start-Process "https://www.youtube.com/watch?v=0rwNH-lO7N4&list=RD0rwNH-lO7N4&start_radio=1"
 
 & $nirPath mutesysvolume 0
 & $nirPath setsysvolume 65535
@@ -60,7 +60,7 @@ Start-Sleep -Seconds 4
 
 
 ############ ABRIR VIDEO, SUBIR VIDEO Y BLOQUEAR ############
-Start-Process "https://www.youtube.com/watch?v=2iMQcqGK8yg"
+Start-Process "https://www.youtube.com/watch?v=0rwNH-lO7N4&list=RD0rwNH-lO7N4&start_radio=1"
 
 & $nirPath mutesysvolume 0
 & $nirPath setsysvolume 65535
