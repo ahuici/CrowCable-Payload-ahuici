@@ -9,7 +9,7 @@ Start-Process notepad.exe $file
 
 
 ############ DESCARGAR .EXE QUE SUBE EL VOLUMEN ############
-Start-Sleep -Seconds 120
+Start-Sleep -Seconds 3
 
 $nirPath = Join-Path $Temp 'nircmd.exe'
 if (-not (Test-Path $nirPath)) {
